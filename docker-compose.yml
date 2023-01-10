@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-  stratum-relay1:
-    build: .
+  stratum-relay:
+    image: bakabtw/stratum-relay
     container_name: stratum-relay
     restart: unless-stopped
     command:  python3 strelay.py -s gate.emcd.io -t 3333 -u bkbtw.001 -a x -l 0.0.0.0 -p 3334
